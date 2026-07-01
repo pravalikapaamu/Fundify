@@ -1,0 +1,448 @@
+body{
+    background:#FBFCF9;
+    font-family:'Poppins',sans-serif;
+}
+
+
+.campaign-hero{
+    padding:28px 8% 42px;
+    background:
+        radial-gradient(circle at top left, #EAF7FF 0%, transparent 38%),
+        radial-gradient(circle at top right, #FFF4DF 0%, transparent 38%),
+        linear-gradient(135deg, #F6FBFF 0%, #F8FFF8 55%, #FFF9EE 100%);
+    text-align:center;
+}
+
+.campaign-hero-content{
+    max-width:860px;
+    margin:0 auto;
+}
+
+.hero-tag{
+    display:inline-block;
+    background:#E8F7EC;
+    color:#2E8B57;
+    padding:9px 22px;
+    border-radius:30px;
+    font-size:14px;
+    font-weight:600;
+    margin-bottom:14px;
+}
+
+.campaign-hero h1{
+    font-size:46px;
+    color:#173F5F;
+    line-height:1.2;
+    font-weight:800;
+    margin-bottom:12px;
+}
+
+.campaign-hero p{
+    max-width:700px;
+    margin:0 auto 24px;
+    color:#667085;
+    font-size:15px;
+    line-height:1.7;
+}
+
+
+
+.search-box{
+    max-width:660px;
+    margin:0 auto 22px;
+    display:flex;
+    justify-content:center;
+}
+
+.search-box input{
+    flex:1;
+    height:52px;
+    padding:0 22px;
+    border:none;
+    outline:none;
+    border-radius:16px 0 0 16px;
+    font-size:16px;
+    background:#fff;
+    box-shadow:0 12px 28px rgba(0,0,0,.08);
+}
+
+.search-box button{
+    width:145px;
+    border:none;
+    background:#173F5F;
+    color:#fff;
+    font-size:16px;
+    font-weight:600;
+    border-radius:0 16px 16px 0;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.search-box button:hover{
+    background:#2E8B57;
+}
+
+
+
+.category-filter{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:12px;
+}
+
+.category-filter button{
+    border:none;
+    padding:10px 22px;
+    border-radius:30px;
+    background:#fff;
+    color:#173F5F;
+    font-size:15px;
+    font-weight:600;
+    cursor:pointer;
+    box-shadow:0 8px 20px rgba(0,0,0,.07);
+    transition:.3s;
+}
+
+.category-filter button:hover,
+.category-filter button.active{
+    background:#2E8B57;
+    color:#fff;
+    transform:translateY(-2px);
+}
+
+.campaign-list{
+    padding:34px 8% 68px;
+
+    background:
+    linear-gradient(
+        135deg,
+        #F6FBFF 0%,
+        #F8FFF8 55%,
+        #FFF9EE 100%
+    );
+}
+
+.campaign-list .container{
+    max-width:1290px;
+    margin:auto;
+}
+
+.campaign-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:22px;
+
+}
+
+
+
+.campaign-card{
+
+    background:#fff;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:0 12px 28px rgba(23,63,95,.09);
+
+    transition:.35s;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.campaign-card:hover{
+
+    transform:translateY(-7px);
+
+    box-shadow:0 18px 36px rgba(23,63,95,.14);
+
+}
+
+.campaign-card img{
+
+    width:100%;
+
+    height:176px;
+
+    object-fit:cover;
+
+}
+
+
+.campaign-content{
+
+    padding:18px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    flex:1;
+
+}
+
+.category{
+    display:inline-block;
+    width:max-content;
+    padding:7px 16px;
+    border-radius:30px;
+    font-size:13px;
+    font-weight:600;
+    margin-bottom:12px;
+    text-decoration:none;
+    cursor:pointer;
+    position:relative;
+    z-index:999;
+    pointer-events:auto;
+}
+.campaign-content{
+    position:relative;
+    z-index:1;
+}
+
+.campaign-card img{
+    position:relative;
+    z-index:0;
+}
+
+.category:hover{
+    transform:translateY(-2px);
+    box-shadow:0 6px 15px rgba(0,0,0,.12);
+}
+.healthcare{
+    background:#FFE9E9;
+    color:#D84343;
+}
+
+.education{
+    background:#EAF2FF;
+    color:#2962FF;
+}
+
+.technology{
+    background:#E9FFF5;
+    color:#009966;
+}
+
+.environment{
+    background:#EEFBE8;
+    color:#2E7D32;
+}
+
+.campaign-content h3{
+
+    font-size:19px;
+
+    color:#173F5F;
+
+    line-height:1.35;
+
+    margin-bottom:10px;
+
+}
+.campaign-content h3 a{
+    color:#173F5F;
+    text-decoration:none;
+}
+
+.campaign-content h3 a:hover{
+    color:#2E8B57;
+}
+
+.campaign-content p{
+
+    font-size:15px;
+
+    color:#667085;
+
+    line-height:1.7;
+
+    margin-bottom:14px;
+
+}
+
+.progress-bar{
+
+    width:100%;
+
+    height:8px;
+
+    background:#ECECEC;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+    margin-bottom:12px;
+
+}
+
+.progress{
+
+    height:100%;
+
+    background:linear-gradient(90deg,#2E8B57,#45B97C);
+
+}
+
+.campaign-info{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    color:#173F5F;
+
+    font-weight:700;
+
+    margin-bottom:10px;
+
+}
+
+.campaign-footer{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    color:#777;
+
+    font-size:14px;
+
+    margin-bottom:14px;
+
+}
+
+.campaign-btn{
+
+    margin-top:auto;
+
+    text-align:center;
+
+    text-decoration:none;
+
+    background:#173F5F;
+
+    color:#fff;
+
+    padding:12px;
+
+    border-radius:12px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.campaign-btn:hover{
+
+    background:#2E8B57;
+
+}
+
+
+@media(max-width:1200px){
+
+    .campaign-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:768px){
+
+    .campaign-hero{
+        padding:55px 6% 45px;
+    }
+
+    .campaign-hero h1{
+        font-size:36px;
+    }
+
+    .campaign-hero p{
+        font-size:16px;
+    }
+
+    .search-box{
+        flex-direction:column;
+        gap:12px;
+    }
+
+    .search-box input,
+    .search-box button{
+        width:100%;
+        border-radius:14px;
+    }
+
+    .campaign-list{
+        padding:35px 6% 60px;
+    }
+
+    .campaign-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+
+@media(max-width:480px){
+
+    .campaign-hero h1{
+        font-size:30px;
+    }
+
+    .category-filter button{
+        padding:10px 18px;
+        font-size:14px;
+    }
+
+    .campaign-card img{
+        height:180px;
+    }
+
+}
+
+.simple-footer {
+    background: #173F5F;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 16px 20px;
+    font-size: 14px;
+}
+
+.simple-footer p {
+    margin: 0;
+}
+
+@media (max-width: 1100px) {
+    .donate-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 620px) {
+    .donate-section {
+        padding: 42px 6% 52px;
+    }
+
+    .donate-heading h1 {
+        font-size: 32px;
+    }
+
+    .donate-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .donate-card h3,
+    .donate-card p {
+        min-height: auto;
+    }
+}

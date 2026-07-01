@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Create Campaign | Fundify</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/create-campaign.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+
+<h2><a href="index.html">Fundify</a></h2>
+
+</div>
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="campaigns.html">Campaigns</a></li>
+
+<li><a href="create-campaign.html" class="active">Start a Campaign</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+<div class="nav-buttons">
+
+<a href="login.html" class="login-btn">Login</a>
+
+<a href="donate.html" class="donate-btn">Donate Now</a>
+
+</div>
+
+</nav>
+
+</header>
+<section class="create-section">
+
+    <div class="create-hero">
+
+        <div class="create-intro">
+
+            <span class="create-tag">Start a Fundraiser</span>
+
+            <h1>Tell us about your campaign</h1>
+
+            <p>
+                Share your cause, funding goal, and campaign story. After review,
+                your campaign will be ready for people to support.
+            </p>
+
+        </div>
+
+        <div class="create-image">
+            <img src="images/create-campaign.png" alt="Create Campaign">
+        </div>
+
+    </div>
+
+    <div class="campaign-workspace">
+
+        <div class="create-card">
+
+            <h2>Campaign Details</h2>
+
+            <form id="campaignForm">
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label for="campaignTitle">Campaign Title</label>
+                        <input
+                            type="text"
+                            id="campaignTitle"
+                            placeholder="Example: Help Ravi Complete His Engineering"
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="category">Category</label>
+                        <select id="category">
+                            <option value="">Select Category</option>
+                            <option>Healthcare</option>
+                            <option>Education</option>
+                            <option>Environment</option>
+                            <option>Agriculture</option>
+                            <option>Disaster Relief</option>
+                            <option>Animal Welfare</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label for="goalAmount">Goal Amount</label>
+                        <input
+                            type="number"
+                            id="goalAmount"
+                            placeholder="Goal Amount (₹)"
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="endDate">End Date</label>
+                        <input type="date" id="endDate">
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="campaignDescription">Short Description</label>
+                    <textarea
+                        id="campaignDescription"
+                        rows="4"
+                        placeholder="Write a short summary about your campaign"
+                    ></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="campaignStory">Campaign Story</label>
+                    <textarea
+                        id="campaignStory"
+                        rows="6"
+                        placeholder="Explain the problem, why funds are needed, and how donations will help"
+                    ></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="campaignImage">Campaign Image</label>
+                    <input type="file" id="campaignImage">
+                </div>
+
+                <button type="submit">Create Campaign</button>
+
+                <p id="campaignMessage" class="campaign-message"></p>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+<footer class="simple-footer">
+    <p>© 2026 Fundify | Built for transparent crowdfunding</p>
+</footer>
+</body>
+<script src="js/script.js"></script>
+</html>

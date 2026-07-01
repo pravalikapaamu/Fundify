@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Login | Fundify</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/login.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+
+<h2><a href="index.html">Fundify</a></h2>
+
+</div>
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="campaigns.html">Campaigns</a></li>
+
+<li><a href="create-campaign.html">Start a Campaign</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+<div class="nav-buttons">
+
+<a href="login.html" class="login-btn active">Login</a>
+
+<a href="donate.html" class="donate-btn">Donate Now</a>
+
+</div>
+
+</nav>
+
+</header>
+
+<section class="login-section">
+
+    <div class="login-container">
+
+        <div class="login-content">
+
+            <span class="login-tag">Account Access</span>
+
+            <h1>Login to Fundify</h1>
+
+            <p>
+                Sign in to manage campaign details, review donation activity,
+                and continue using the Fundify crowdfunding platform.
+            </p>
+
+            <div class="login-info-list">
+
+                <div class="login-info-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Manage created campaigns</span>
+                </div>
+
+                <div class="login-info-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Track campaign progress</span>
+                </div>
+
+                <div class="login-info-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>View donation details</span>
+                </div>
+
+            </div>
+
+            <img src="images/login.png" alt="Login Illustration">
+
+        </div>
+
+        <div class="login-card">
+
+            <h2>Sign In</h2>
+
+            <form id="loginForm">
+
+                <div class="form-group">
+                    <label for="loginEmail">Email Address</label>
+                    <input
+                        type="email"
+                        id="loginEmail"
+                        placeholder="Enter your email"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input
+                        type="password"
+                        id="loginPassword"
+                        placeholder="Enter your password"
+                    >
+                </div>
+
+                <button type="submit">Login</button>
+
+                <p id="loginMessage" class="login-message"></p>
+
+            </form>
+
+            <p class="signup-text">
+
+                New to Fundify?
+
+                <a href="create-campaign.html">
+                    Start your first campaign
+                </a>
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer class="simple-footer">
+    <p>© 2026 Fundify | Built for transparent crowdfunding</p>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
